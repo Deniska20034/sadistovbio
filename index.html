@@ -1,0 +1,98 @@
+<!-- 
+
+MADE BY XSYNTH
+
+ВЛАДЕЛЕЦ САДИСТОВА - TRUE
+
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+!-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SADISTOV - BIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="dots-bg" style="display:none"></canvas>
+    <div class="container fade-in">
+        <aside class="sidebar fade-in">
+            <img class="avatar fade-in" src="https://cdn.discordapp.com/avatars/625238415734079508/fa9cddb1883756cf859b464366a1eb9a.webp?size=1024" alt="avatar">
+            <div class="bio-desc fade-in">
+                <h2>「FR」SADISTOV</h2>
+                <p>- Nickname: Sadistov</p>
+                <p>- Age: 17 y.o</p>
+                <p>- Accomodation: Russia</p>
+                <p>- Contact: @attacksadistov</p>
+                <p>- Skills: OSINT</p>
+                <p>- Skills: Geoint</p>
+                <p>- Activity:</p>
+                <p>- Creator of Forest of Reapers</p>
+                <p>- In KM more than 1.5 years</p>
+            </div>
+        </aside>
+        <div class="center-boxes fade-in">
+            <div class="box fade-in">
+                <div class="box-title">GEOINT (Geospatial Intelligence)</div>
+                <div class="box-content">Is intelligence based on the analysis of geographic data, including satellite imagery, maps and geolocation data. It is used in military, environmental and urban applications.</div>
+            </div>
+            <div class="box fade-in">
+                <div class="box-title">OSINT (Open-Source Intelligence)</div>
+                <div class="box-content">Collecting and analyzing information from open sources: social networks, mass media, public databases. It is used in journalism, cybersecurity and law enforcement.</div>
+            </div>
+            <div class="box fade-in">
+                <div class="box-title">FOREST OF REAPERS</div>
+                <div class="box-content">I am the co-owner of the Forest of Reapers stack and maintain an excellent relationship with its primary owner. We work effectively together to ensure the development and stability of our community. My status allows me to influence key decisions, and my close relationship with the owner ensures cohesiveness. Forest of Reapers is not just a clan, but a team where everyone is important and trust and cooperation come first.</div>
+            </div>
+            <div class="box fade-in">
+                <div class="box-title">CONTACTS</div>
+                <div class="contacts-btns">
+                    <button class="contact-btn" id="discord-btn" title="Copy Discord username">
+                        <img src="materials/discord.png" alt="Discord" class="icon-discord" width="32" height="32" />
+                        Discord
+                    </button>
+                    <button class="contact-btn" id="telegram-btn" title="Open Telegram">
+                        <img src="materials/telegram.png" alt="Telegram" class="icon-telegram" width="32" height="32" />
+                        Telegram
+                    </button>
+                </div>
+                <div class="contacts-btns contacts-btns-single">
+                    <button class="contact-btn" id="reapers-btn" title="FR CLAN Discord">
+                        <img src="materials/reapers.jpg" alt="Forest of Reapers" class="icon-reapers" width="32" height="32" />
+                        Forest of Reapers
+                    </button>
+                </div>
+                <div id="discord-copied" class="copy-feedback" style="display:none;">Скопировано!</div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const discordBtn = document.getElementById('discord-btn');
+        const telegramBtn = document.getElementById('telegram-btn');
+        const reapersBtn = document.getElementById('reapers-btn');
+        const feedback = document.getElementById('discord-copied');
+        discordBtn.addEventListener('click', function() {
+            navigator.clipboard.writeText('no7.7').then(() => {
+                feedback.style.display = 'block';
+                setTimeout(() => { feedback.style.display = 'none'; }, 1200);
+            });
+        });
+        telegramBtn.addEventListener('click', function() {
+            window.open('http://t.me/attacksadistov', '_blank');
+        });
+        reapersBtn.addEventListener('click', function() {
+            window.open('https://discord.gg/gqVVT4J2PP', '_blank');
+        });
+        // Hide dots-bg on mobile for extra safety
+        if (window.innerWidth <= 700) {
+            var dotsBg = document.getElementById('dots-bg');
+            if (dotsBg) dotsBg.style.display = 'none';
+        }
+    });
+    </script>
+</body>
+</html>
