@@ -9,7 +9,7 @@ if (!isMobile && canvas) {
     canvas.width = width;
     canvas.height = height;
 
-    const DOTS = 60;
+    const DOTS = 30;
     const dots = [];
 
     function random(min, max) {
