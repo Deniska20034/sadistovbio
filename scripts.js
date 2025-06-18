@@ -135,7 +135,7 @@ if (!isMobile && canvas) {
 
     if (discordBtn && feedback) {
         discordBtn.addEventListener('click', function() {
-            const text = 'no7.7';
+            const text = 'no6.6';
             if (navigator.clipboard && window.isSecureContext) {
                 navigator.clipboard.writeText(text).then(showFeedback);
             } else {
